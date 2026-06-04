@@ -19,6 +19,10 @@ Useful links:
 - [RCP](https://rpc.info/)
 - [Remix IDE](https://remix.ethereum.org/)
 
+Transations details:
+
+![Screenshot](./img/Etherscan.png)
+
 [LICENSE](/LICENSE)
 
 See [original repository](https://web.dio.me/lab/criando-o-seu-primeiro-token-do-zero/learning/Co-founder)
