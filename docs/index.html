@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Token Scratch Web3 Standards</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 id="site-title">Token Scratch Web3 Standards</h1>
+
+      <div class="controls" aria-hidden="false">
+        <label class="visually-hidden" for="lang-select" id="lang-label">Language</label>
+        <select id="lang-select" aria-labelledby="lang-label" title="Choose language">
+          <option value="en">English</option>
+          <option value="pt">Português (BR)</option>
+          <option value="es">Español</option>
+        </select>
+
+        <button id="theme-toggle" aria-pressed="true" aria-label="Toggle dark mode">
+          <span id="theme-icon" aria-hidden="true">
+            <!-- moon icon default -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="visually-hidden" id="theme-text">Dark</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="skip-links" aria-label="Skip links">
+      <a href="#main" class="skip-link">Skip to content</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">Token Scratch Web3 Standards</h2>
+      <p id="hero-desc">Create your first token from scratch using Web3 standards. Metamask and RPC configured; deployed via Remix IDE.</p>
+    </section>
+
+    <section class="card token-overview" aria-labelledby="overview-title">
+      <h3 id="overview-title">Token Overview</h3>
+      <dl>
+        <div class="row">
+          <dt>Token Name</dt>
+          <dd id="token-name">ScratchToken</dd>
+        </div>
+        <div class="row">
+          <dt>Symbol</dt>
+          <dd id="token-symbol">SCRT</dd>
+        </div>
+        <div class="row">
+          <dt>Decimals</dt>
+          <dd id="token-decimals">18</dd>
+        </div>
+        <div class="row">
+          <dt>Total Supply</dt>
+          <dd id="token-supply">1,000,000</dd>
+        </div>
+      </dl>
+      <p class="note" id="overview-note">This is a static demo UI for documentation and local testing.</p>
+    </section>
+
+    <section class="card steps" aria-labelledby="steps-title">
+      <h3 id="steps-title">Quick Steps</h3>
+      <ol>
+        <li><strong>Prepare</strong>: Install MetaMask and set RPC to your testnet.</li>
+        <li><strong>Edit</strong>: Update token parameters in your Solidity contract.</li>
+        <li><strong>Compile</strong>: Use Remix IDE to compile the contract.</li>
+        <li><strong>Deploy</strong>: Deploy via Remix using injected Web3 (MetaMask).</li>
+        <li><strong>Verify</strong>: Check transaction on the testnet explorer.</li>
+      </ol>
+    </section>
+
+    <section class="card actions" aria-labelledby="actions-title">
+      <h3 id="actions-title">Demo Actions</h3>
+      <p id="actions-desc">These buttons are UI-only helpers for your local demo.</p>
+      <div class="btn-row">
+        <button id="copy-snippet" class="btn" aria-label="Copy sample contract snippet">Copy sample snippet</button>
+        <button id="open-remix" class="btn secondary" aria-label="Open Remix IDE">Open Remix (link)</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p id="footer-text">Built for training HTML5 CSS3 JS with semantics and accessibility.</p>
+      <p class="muted">No backend required • Runs locally on desktop/tablet/phone</p>
+    </div>
+  </footer>
+
+  <template id="sample-snippet">
+    // SPDX-License-Identifier: MIT
+    pragma solidity ^0.8.0;
+    import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+    contract ScratchToken is ERC20 {
+      constructor(uint256 initialSupply) ERC20("ScratchToken", "SCRT") {
+        _mint(msg.sender, initialSupply);
+      }
+    }
+  </template>
+
+  <script src="./src/script.js" defer></script>
+</body>
+</html>

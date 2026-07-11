@@ -1,0 +1,88 @@
+# Node / package manager
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables and secrets
+.env
+.env.*.local
+.env.local
+.env.test
+.env.production
+
+# Build artifacts and caches
+dist/
+build/
+out/
+artifacts/
+cache/
+.cache/
+.cache-loader/
+typechain/
+coverage/
+coverage-final.json
+*.tsbuildinfo
+
+# Hardhat / Truffle / OpenZeppelin
+hh-config.json
+hardhat.config.*
+truffle-config.*
+truffle.js
+openzeppelin/
+.openzeppelin/
+openzeppelin.json
+
+# Remix / browser-solidity artifacts
+remix.config.json
+remix-ide-workspace/
+browser-solidity-cache/
+
+# Test results and reports
+test-results/
+mochawesome-report/
+nyc_output/
+
+# Logs
+*.log
+logs/
+pids/
+*.pid
+*.seed
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor temp files
+*~
+*.swp
+*.swo
+*.tmp
+
+# Build/deployment platforms (optional)
+.vercel/
+.netlify/
+.serverless/
+.firebase/
+dist-*/ 
+
+# Misc
+coverage/
+reports/
+docs/.cache/
+
+# Optional: local config files you don't want in repo
+local.env
+local.settings.json
+
+# Keep this file tracked; edit as needed for your environment

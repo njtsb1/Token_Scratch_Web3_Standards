@@ -1,5 +1,3 @@
-Daily learning
-
 # Creating Your First Token from Scratch Using Web3 Standards
 
 Project developed at the Bootcamp Blockchain Specialist Training, under the guidance of specialist [Ricardo Zago](https://www.linkedin.com/in/ricardozago/ "Ricardo Zago").
@@ -18,6 +16,10 @@ Useful links:
 - [Metamask](https://metamask.io/)
 - [RCP](https://rpc.info/)
 - [Remix IDE](https://remix.ethereum.org/)
+
+Transations details:
+
+![Screenshot](./docs/public/Etherscan.png)
 
 [LICENSE](/LICENSE)
 
