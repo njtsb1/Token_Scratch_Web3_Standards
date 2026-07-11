@@ -23,4 +23,4 @@ Transations details:
 
 [LICENSE](/LICENSE)
 
-See [original repository](https://web.dio.me/lab/criando-o-seu-primeiro-token-do-zero/learning/Co-founder)
+See [original repository](https://github.com/relsi/web3-blockchain-classes/blob/main/token.sol)
